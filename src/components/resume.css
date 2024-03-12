@@ -1,0 +1,184 @@
+/* .resume-header {
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 5rem;
+    color: var(--primary-color);
+} */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: auto;
+    width: 60%;
+    border-radius: 3vmin;
+    background-color: var(--background-color);
+    color: var(--on-background-color);
+    padding: 1rem;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*Education / Work experience*/
+.content-container h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    font-family: 'Roboto Thin', sans-serif;
+}
+
+/*Title*/
+.content-container h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    padding-bottom: 0.3rem;
+}
+
+/*Place*/
+.content-container h4 {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 1.5rem;
+    color: var(--teritary-color);
+}
+
+/*Years*/
+.content-container h5 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: normal;
+    padding-bottom: 0.3rem;
+    color: var(--teritary-color);
+
+}
+
+/*Description*/
+.content-container p {
+    font-size: 1.3rem;
+    /* color: var(--on-background-color); */
+}
+
+.cv-button {
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+    width: 30%;
+}
+
+.cv-button span {
+    font-size: 2.2rem
+}
+
+
+
+/* .education {
+    background-color: var(--secondary-container-color);
+    color: var(--on-secondary-container-color);
+}
+
+.education h4 {
+    color: var(--on-background-color);
+}
+
+.education h3 {
+    color: var(--primary-color);
+} */
+
+
+
+.border-top {
+    padding-top: 1rem;
+    border-top: 2px solid #bfc8cc;
+}
+
+.info-container {
+    padding-bottom: 2rem;
+}
+
+.title-and-year-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.content a {
+    align-self: center;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+}
+
+/*Responsitivity*/
+@media (max-width: 980px) {
+    html {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 1rem;
+    }
+
+    .resume-header {
+        font-size: 3rem;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .work {
+        width: 100%;
+    }
+
+    .education {
+        width: 100%;
+    }
+
+    .title-and-year-container {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 0.8rem;
+    }
+
+    .work a {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    footer .img-links-container .img-button-container .btn {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    footer .social-link {
+        font-size: 1.8rem;
+    }
+
+    #copyright-text {
+        font-size: 0.7rem;
+    }
+}
+
+@media print {
+
+    h1,
+    .work a {
+        display: none;
+    }
+
+    .work {
+        height: 95vh;
+    }
+}

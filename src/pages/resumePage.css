@@ -1,0 +1,13 @@
+.resume-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+.resume-text h2 {
+    font-size: 3rem;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;;
+    font-weight: 700;
+}

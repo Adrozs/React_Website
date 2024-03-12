@@ -1,0 +1,141 @@
+:root {
+  /*Colors*/
+  --background-color: #191c1d;
+  --on-background-color: #e1e3e4;
+
+  --surface--color: #40484b;
+  --on-surface--color: #bfc8cc;
+
+  --outline-color: #899296;
+
+  --navbar-color: #1d333b;
+
+  --btn-active-color: #56caee;
+
+  --primary-color: #5ad5f9;
+  --on-primary-color: #003542;
+  --primary-container-color: #004e5f;
+  --on-primary-container-color: #b4ebff;
+
+  --secondary-color: #b3cad4;
+  --on-secondary-color: #1d333b;
+  --secondary-container-color: #344a52;
+  --on-secondary-container-color: #cee6f0;
+  --secondary-highlight-color: #cee6f0;
+
+  --teritary-color: #c2c4eb;
+  --on-teritary-color: #2b2e4d;
+  --teritary-container-color: #414465;
+  --on-teritary-container-color: #e0e0ff;
+  --teritary-highlight-container-color: #e4e4ff;
+}
+
+.light-mode {
+  /*Colors*/
+  --background-color: #fbfcfe;
+  --on-background-color: #191c1d;
+
+  --surface--color: #dbe4e8;
+  --on-surface--color: #40484b;
+
+  --outline-color: #70787c;
+
+  --navbar-color: #b4ebff;
+
+  --primary-color: #5ad5f9;
+  --on-primary-color: #001f27;
+  --primary-container-color: #b4ebff;
+  --on-primary-container-color: #001f27;
+
+  --secondary-color: #4c626a;
+  --on-secondary-color: #ffffff;
+  --secondary-container-color: #cee6f0;
+  --on-secondary-container-color: #071e25;
+  --secondary-highlight-color: #092932;
+
+  --teritary-color: #595c7e;
+  --on-teritary-color: #ffffff;
+  --teritary-container-color: #e0e0ff;
+  --on-teritary-container-color: #161937;
+  --teritary-highlight-container-color: #1a1d42;
+}
+
+/*Icon for "new page" in the cards & light/darkmode*/
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--on-background-color);
+}
+
+
+/*Sets width for sections with content in - to allow for backgrounds not constrained to the content width*/
+.content-width {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Buttons*/
+.my-btn {
+  text-decoration: none;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  font-size: 1.1rem;
+  padding: 0.8rem;
+  margin-left: 2rem;
+  border-radius: 3vmin;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--on-primary-color);
+  box-shadow: 5px 10px 30px 2px rgba(0, 0, 0, 0.25);
+}
+
+.my-btn:hover {
+  scale: 1.04;
+  background-color: var(--on-primary-color);
+  color: var(--primary-color);
+}
+
+.my-btn:active {
+  scale: 0.985;
+  background-color: var(--primary-container-color);
+  color: var(--on-primary-container-color);
+}
+
+/*intro text for each page*/
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.intro-text h1 {
+  font-size: 5rem;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;;
+  font-weight: 700;
+}
+
+.intro-text h4 {
+  font-weight: normal;
+}
+
+.divider-top {
+  border-top: 2px solid var(--surface--color);
+  margin: 5rem 0;
+}

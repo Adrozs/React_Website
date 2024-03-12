@@ -1,0 +1,62 @@
+.category-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    padding-top: 3rem;
+}
+
+.category-container h2 {
+    font-size: 3rem;
+    font-family: "Roboto Thin", "sans serif";
+}
+
+.techItem-container {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+    background-color: var(--secondary-container-color);
+    border-radius: 3vmin;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 3rem 0 3rem;
+    min-width: 20%;
+}
+
+.icon-container i {
+    font-size: 4rem;
+    border-radius: 2vmin;
+    padding: 0.8rem;
+    color: var(--primary-color);
+    background-color: var(--primary-container-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.icon-container i.fa-gear,
+.icon-container i.fa-file-code {
+    text-align: center;
+    width: 89.6px;
+    height: 89.6px;
+}
+
+.title-container h3 {
+    font-size: 2rem;
+    font-family: "Roboto Condensed";
+    margin-top: 1.2rem;
+    color: var(--on-primary-container-color);
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    color: var(--on-secondary-container-color);
+}
+

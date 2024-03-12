@@ -1,0 +1,14 @@
+.carousel {
+    top: -88px;
+}
+
+.carousel-item {
+    text-align: center;
+
+}
+
+.carousel-item img{
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+}
