@@ -12,7 +12,7 @@ export default function TechItem() {
                 <section key={category} className='techItem-container'>
                     {MyTechItems[category].map((item, i) => (
                         <article key={i} className="item-container">
-                            <section className="icon-container">
+                            <section className="icon-container hoverable">
                                 <i className={item.icon}></i>
                             </section>
                             <section className="title-container">

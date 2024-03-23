@@ -1,0 +1,25 @@
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+}
+
+.experience-content img {
+    max-width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+    margin: 2rem;
+    border-radius: 3vmin;
+}
+
+.experience-content p {
+    max-width: 700px;
+    font-size: 1.4rem;
+}

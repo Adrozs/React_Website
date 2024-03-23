@@ -1,6 +1,7 @@
 :root {
   /*Colors*/
   --background-color: #191c1d;
+  --alt-background-color: #262a2c;
   --on-background-color: #e1e3e4;
 
   --surface--color: #40484b;
@@ -33,6 +34,7 @@
 .light-mode {
   /*Colors*/
   --background-color: #fbfcfe;
+  --alt-background-color: #eff1f5;
   --on-background-color: #191c1d;
 
   --surface--color: #dbe4e8;
@@ -94,7 +96,7 @@ body {
   text-decoration: none;
   transition-duration: 0.3s;
   transition-timing-function: ease;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   padding: 0.8rem;
   margin-left: 2rem;
   border-radius: 3vmin;
@@ -105,15 +107,13 @@ body {
 }
 
 .my-btn:hover {
-  scale: 1.04;
-  background-color: var(--on-primary-color);
-  color: var(--primary-color);
+  scale: 1.03;
 }
 
 .my-btn:active {
-  scale: 0.985;
-  background-color: var(--primary-container-color);
-  color: var(--on-primary-container-color);
+  scale: 0.996;
+  background-color: var(--on-primary-color);
+  color: var(--primary-color);
 }
 
 /*intro text for each page*/
@@ -135,7 +135,46 @@ body {
   font-weight: normal;
 }
 
-.divider-top {
+.divider-line {
   border-top: 2px solid var(--surface--color);
-  margin: 5rem 0;
+  /* margin-bottom: 5vh ;   */
+  width: 100%;
+}
+
+.header-space {
+  /* margin-top: 10vh; */
+    padding: 5vh 0;
+}
+
+.spacer-top {
+  margin-top: 10vh;
+}
+
+.spacer-bot {
+  margin-bottom: 10vh;
+}
+
+
+
+.alt-background {
+  background-color: var(--alt-background-color);
+  /* padding: 1rem 0; */
+}
+
+.hoverable {
+  text-decoration: none;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.hoverable:hover {
+    scale: 1.04;
+}
+
+.hoverable:active {
+    scale: 0.985;
+}
+
+.shadow {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
 }

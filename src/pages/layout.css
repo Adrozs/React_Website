@@ -87,6 +87,18 @@
     color: var(--teritary-color);
 }
 
+#hire-me-button.active {
+    border-radius: 0;
+    color: var(--primary-color);
+    background-color: transparent; 
+    box-shadow: none;
+}
+
+#hire-me-button.active:hover {
+    color: var(--secondary-highlight-color);
+
+}
+
 #nav-toggle {
     display: none;
 }
@@ -95,6 +107,11 @@
     display: none;
 }
 
+
+/* Hidden for now as light mode isn't implemented yet */
+#theme-toggle {
+    visibility: hidden;
+}
 
 /*Footer*/
 footer {

@@ -64,10 +64,9 @@
 }
 
 .cv-button {
-    font-size: 2rem;
+    font-size: 1.2rem !important;
     margin: 1rem;
     text-align: center;
-    width: 30%;
 }
 
 .cv-button span {

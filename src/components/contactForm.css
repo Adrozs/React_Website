@@ -1,0 +1,331 @@
+.overlay {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    padding: 8rem 0;
+}
+
+.section-bg {
+    background-size: cover;
+    position: relative;
+    background-position: left;
+    z-index: 0;
+    padding: 0;
+    min-height: auto;
+    overflow: hidden;
+}
+
+.contact-form {
+    position: relative;
+    padding: 2rem 0 2rem 2.5rem;
+    background: var(--primary-container-color);
+    
+}
+
+.contact-form:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 6px;
+    box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, .2);
+    background: var(--primary-container-color);
+    pointer-events: none;
+    right: auto;
+    width: 100vw;
+    z-index: -1;
+}
+
+.particles-js-canvas-el {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.contact-form input {
+    border: 0;
+    background: transparent;
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 0.8rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0;
+    transition: .3s ease-in-out;
+    border: 2px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, .1);
+    color: var(--on-primary-container-color);
+}
+
+.contact-form textarea {
+    border: 0;
+    background: transparent;
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 0.8rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0;
+    transition: .3s ease-in-out;
+    border: 2px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, .1);
+}
+
+.contact-form input::placeholder {
+    color: red;
+}
+
+.contact-form textarea::placeholder {
+    color: red;
+}
+
+.contact-form input {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+        color: red;
+}
+
+.contact-form input:hover,
+.contact-form input:focus {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    border: 2px solid transparent;
+    border-bottom-color: var(--primary-color);
+
+}
+
+.contact-form textarea:hover,
+.contact-form textarea:focus {
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: 2px solid transparent;
+    border-bottom-color: var(--primary-color);
+        color: red;
+}
+
+
+/* .taso-btn {
+    background-color: #fff;
+    margin: 25px 0;
+    color: #214dcb;
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.32);
+    box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.17);
+} */
+
+.contact-info {
+    padding: 0 30px 0px 0;
+}
+
+h2.contact-title {
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    color: #ececec;
+}
+
+ul.contact-info {
+    margin-top: 30px;
+}
+
+ul.contact-info li {
+    margin-bottom: 22px;
+}
+
+
+
+ul.contact-info span {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+ul.contact-info li {
+    display: flex;
+    width: 100%;
+}
+
+.info-left {
+    width: 10%;
+}
+
+.info-left i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    color: var(--on-primary-color);
+}
+
+.info-right h4 {
+    color: var(--on-primary-color);
+    font-size: 18px;
+}
+
+.contact-page .info-left i {
+    color: var(--primary-color);
+}
+
+.form-btn {
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.form-btn-big {
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(45, 45, 45, 0.47843137254901963);
+    box-shadow: 2px 5px 10px 0px rgba(45, 45, 45, 0.19);
+    color: var(--on-primary-color) !important;
+    margin-right: 20px;
+    background: var(--primary-color) !important;
+    transition: .2s;
+    margin-top: 50px;
+    width: 40% !important;
+    border-radius: 2vmin !important;
+    border-bottom: none !important;
+}
+
+.form-btn-big:hover {
+    scale: 1.02;
+}
+
+.form-btn-big:active {
+    scale: 0.994;
+    background-color: var(--on-primary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-form {
+        padding: 30px;
+    }
+
+    .contact-form:before {
+        width: 100%;
+    }
+
+}
+
+/* my test code */
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10%;
+    margin: 10rem 0;    
+    /* background-color: var(--primary-container-color); */
+    border-top: 2px solid var(--surface--color);
+    border-bottom: 2px solid var(--surface--color);
+        
+}
+
+.contact-container img {
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    width: 100%;
+    height: 80%;
+    opacity: 0.12;
+}
+
+.info-section {
+    /* width: 30vw; */
+    padding: 10rem 3rem 2.5rem 3rem;
+}
+
+.info-section h2 {
+    font-family: "Roboto Condensed";
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.info-section .header-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.info-section ul {
+    padding: 0;
+}
+.info-section li {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    column-gap: 3%;
+    list-style-type: none;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.info-section li h4 {
+    font-family: "Roboto Thin", "sans serif";
+    font-size: 1.5rem;
+}
+
+.info-section li i {
+    font-size: 1.8rem;
+}
+
+.form-section {
+    width: 40vw;
+    padding: 3rem 5rem;
+    margin-top: 10rem;
+    margin-bottom: 4.5rem;
+    background-color: var(--primary-container-color);
+    border-radius: 3vmin;
+    box-shadow: 5px 10px 30px 2px rgba(0, 0, 0, 0.25);
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section form input, textarea {
+    padding:  1rem 0.5rem;
+    background-color: none;
+    color: var(--on-primary-color);
+    background-color: var(--on-primary-container-color);
+    border: none;
+    margin: 1rem 0;
+    border-radius: 1vmin;
+}
+.form-section form input::placeholder, textarea::placeholder {
+    color: #507f8d;
+}
+
+.form-section .form-btn {
+    align-self: center;
+    width: 30%;
+    border-radius: 2.5vmin;
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+    box-shadow: 5px 10px 30px 2px rgba(0, 0, 0, 0.25);
+    font-size: 1.5rem;
+}

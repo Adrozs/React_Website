@@ -11,7 +11,7 @@ export const ResumePage = () => {
             </section>
             <Timeline />
 
-        {/* Some sort of divider between content? */}
+        <div className='divider-top'></div>
 
         <section className="resume-text">
             <h2>Resumé</h2>
