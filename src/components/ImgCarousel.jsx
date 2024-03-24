@@ -7,13 +7,13 @@ export default function ImgCarousel() {
         <>
         <Carousel controls={false} interval={6000} pause="hover">
             <Carousel.Item>
-                <img src='src\assets\images\about\school.jpg' />
+                <img src='.\src\assets\images\About\school.jpg' />
             </Carousel.Item>
             <Carousel.Item>
-                    <img src='src\assets\images\about\concert.jpg'/>
+                    <img src='.\src\assets\images\About\Concert.jpg'/>
             </Carousel.Item>
             <Carousel.Item>
-                    <img src='src\assets\images\about\padling.jpg'/>
+                    <img src='.\src\assets\images\About\padling.jpg'/>
                 <Carousel.Caption>
                 </Carousel.Caption>
             </Carousel.Item>
