@@ -14,8 +14,8 @@
     margin: auto;
     width: 60%;
     border-radius: 3vmin;
-    background-color: var(--background-color);
-    color: var(--on-background-color);
+    background-color: var(--background-resume-color);
+    color: var(--on-background-resume-color);
     padding: 1rem;
 }
 
@@ -36,7 +36,7 @@
 /*Title*/
 .content-container h3 {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--primary-resume-color);
     padding-bottom: 0.3rem;
 }
 
@@ -44,7 +44,7 @@
 .content-container h4 {
     font-family: "Roboto Mono", sans-serif;
     font-size: 1.5rem;
-    color: var(--teritary-color);
+    color: var(--teritary-resume-color);
 }
 
 /*Years*/
@@ -53,7 +53,7 @@
     letter-spacing: 1px;
     font-weight: normal;
     padding-bottom: 0.3rem;
-    color: var(--teritary-color);
+    color: var(--teritary-resume-color);
 
 }
 
@@ -114,59 +114,19 @@
 }
 
 /*Responsitivity*/
-@media (max-width: 980px) {
-    html {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 800px) {
-    html {
-        font-size: 1rem;
-    }
-
-    .resume-header {
-        font-size: 3rem;
-    }
-
+@media (max-width: 1600px) {
     .content {
-        flex-direction: column-reverse;
-    }
-
-    .work {
-        width: 100%;
-    }
-
-    .education {
-        width: 100%;
-    }
-
-    .title-and-year-container {
-        flex-direction: row-reverse;
+        width: 90%;
     }
 }
-
-@media (max-width: 600px) {
+@media (max-width: 550px) {
     html {
         font-size: 0.8rem;
     }
-
-    .work a {
+}
+@media (max-width: 450px) {
+    .content {
         width: 100%;
-        padding: 1rem 0;
-    }
-
-    footer .img-links-container .img-button-container .btn {
-        font-size: 1rem;
-        margin: 0;
-    }
-
-    footer .social-link {
-        font-size: 1.8rem;
-    }
-
-    #copyright-text {
-        font-size: 0.7rem;
     }
 }
 

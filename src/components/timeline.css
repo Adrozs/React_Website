@@ -16,8 +16,8 @@
 }
 
 .main-timeline .timeline-content {
-    color: var(--on-background-color);
-    background: var(--background-color);
+    color: var(--on-background-resume-color);
+    background-color: var(--background-resume-color);
     padding: 2rem 1rem 2rem 18rem;
     border-radius: 3vmin;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
@@ -27,7 +27,7 @@
 
 .main-timeline .timeline-content:before {
     content: '';
-    background-color: var(--primary-color);;
+    background-color: var(--primary-resume-color);;
     height: 100%;
     width: 120px;
     position: absolute;
@@ -36,7 +36,7 @@
 }
 
 .main-timeline .timeline-year {
-    color: var(--primary-color);
+    color: var(--primary-resume-color);
     font-size: 40px;
     font-weight: 700;
     line-height: 43px;
@@ -47,7 +47,7 @@
 }
 
 .main-timeline .timeline-icon {
-    color: #fbfcfe;
+    color: var(--background-resume-color);
     font-size: 50px;
     font-weight: 600;
     text-align: center;
@@ -64,7 +64,7 @@
     font-weight: bold;
     text-transform: capitalize;
     margin: 0 0 7px;
-    color: var(--primary-color);
+    color: var(--primary-resume-color);
 }
 
 .main-timeline .place {
@@ -72,7 +72,7 @@
     font-weight: 500;
     text-transform: capitalize;
     margin: 0 0 7px;  
-    color: var(--secondary-color);
+    color: var(--secondary-resume-color);
 }
 
 .main-timeline .description {
@@ -108,43 +108,43 @@
 }
 
 .main-timeline .timeline:nth-child(4n+2) .timeline-content:before {
-    background-color: #b3cad4;
+    background-color: var(--secondary-color);
 }
 
 .main-timeline .timeline:nth-child(4n+2) .title {
-    color: #b3cad4;
+    color: var(--secondary-color);
 }
 
 .main-timeline .timeline:nth-child(4n+2) .timeline-icon i {
-    background-color: #b3cad4;
+    background-color: var(--secondary-color);
 }
 
 .main-timeline .timeline:nth-child(4n+2) .timeline-year {
-    color: #b3cad4;
+    color: var(--secondary-color);
 }
 
 .main-timeline .timeline:nth-child(4n+3) .timeline-content:before {
-    background-color: #004e5f;
+    background-color: var(--primary-container-color);
 }
 
 .main-timeline .timeline:nth-child(4n+3) .title {
-    color: #004e5f;
+    color: var(--primary-container-color);
 }
 
 .main-timeline .timeline:nth-child(4n+3) .timeline-year {
-    color: #004e5f;
+    color: var(--primary-container-color);
 }
 
 .main-timeline .timeline:nth-child(4n+4) .timeline-content:before {
-    background-color: #c2c4eb;
+    background-color: var(--teritary-color);
 }
 
 .main-timeline .timeline:nth-child(4n+4) .title {
-    color: #c2c4eb;
+    color: var(--teritary-color);
 }
 
 .main-timeline .timeline:nth-child(4n+4) .timeline-year {
-    color: #c2c4eb;
+    color: var(--teritary-color);
 }
 
 @media screen and (max-width:767px) {

@@ -1,4 +1,4 @@
-import MyTechItems from '../assets/techStack.json';
+import MyTechItems from '../assets/Json/techStack.json';
 import './techItem.css';
 
 export default function TechItem() {

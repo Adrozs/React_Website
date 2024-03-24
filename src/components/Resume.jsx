@@ -1,4 +1,4 @@
-import MyResume from '../assets/resume.json';
+import MyResume from '../assets/Json/resume.json';
 import './resume.css';
 
 export default function Resume () {
@@ -6,7 +6,7 @@ export default function Resume () {
     return (
         <>
             <section className="content-container content-width">
-                <section className="content light-mode">  
+                <section className="content">  
                    
                     <h2>Work experience</h2>               
                         {MyResume.work.map((wrk,i) => {

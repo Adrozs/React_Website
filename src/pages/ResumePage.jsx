@@ -1,9 +1,14 @@
+import { Helmet } from 'react-helmet';
 import Timeline from "../components/Timeline";
 import Resume from "../components/Resume.jsx";
 import './resumePage.css';
 
 export const ResumePage = () => {
     return (
+        <>
+        <Helmet>
+            <title>Adrian Rozsahegyi | Resumé</title>
+        </Helmet>
         <main>
             <section className="intro-text">
                 <h1>Timeline</h1>
@@ -18,5 +23,6 @@ export const ResumePage = () => {
         </section>
         <Resume/>
         </main>
+        </>
     )
 }

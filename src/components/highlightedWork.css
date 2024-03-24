@@ -111,3 +111,121 @@
     filter: blur(4px);
     transition: 0.3s ease;
 }
+
+/*Responsitivity*/
+@media (max-width: 1310px) {
+    .card-content {
+        width: 600px;
+    }
+    .card-content h3 {
+        font-size: 3rem;
+    }
+
+    .card-content p {
+        font-size: 1.5rem;
+    } 
+
+    .card-content a {
+        font-size: 1.2rem;
+    }
+
+    .card-content:hover h3 {
+        inset: auto auto 290px 30px;
+        transition: inset 0.3s ease-out;
+    }
+}
+@media (max-width: 1225px) {
+    .card-content {
+        width: 90vw;
+    }
+    .card-content h3 {
+        font-size: 4rem;
+    }
+
+    .card-content p {
+        font-size: 2rem;
+        inset: auto auto 100px 30px;
+    }   
+
+    .card-content a {
+        font-size: 1.7rem;
+    }
+
+    .card-content:hover h3 {
+        inset: auto auto 350px 30px;
+        transition: inset 0.3s ease-out;
+    }
+}
+@media (max-width: 938px) {
+    .card-content p {
+        font-size: 1.8rem;
+    }   
+}
+@media (max-width: 810px) {
+    .card-content h3 {
+        font-size: 3rem;
+    }
+
+    .card-content p {
+        font-size: 1.5rem;
+    } 
+
+    .card-content:hover h3 {
+        inset: auto auto 320px 30px;
+    }
+}
+@media (max-width: 610px) {
+    .card-content:hover h3 {
+        inset: auto auto 360px 30px;
+    }
+}
+@media (max-width: 550px) {
+
+    .card-content {
+        height: 100vw;
+    }
+
+    .card-content:hover h3 {
+        inset: auto auto 290px 30px;
+    }
+
+    .card-content p {
+        inset: auto auto 90px 30px;
+    }
+
+    .card-content a {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .card-content h3 {
+            font-size: 2rem;
+    }
+
+    .card-content:hover h3 {
+        inset: auto auto 240px 30px;
+    }
+
+    .card-content p {
+        font-size: 1.2rem ;
+            inset: auto auto 80px 30px;
+    }
+
+    .card-content a {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 388px) {
+    .card-content h3 {
+            font-size: 1.8rem;
+    }
+
+    .card-content p {
+        font-size: 1.1rem ;
+        inset: auto auto 55px 30px;
+    }
+
+    .card-content a {
+        font-size: 1rem;
+    }
+}

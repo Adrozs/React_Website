@@ -1,5 +1,4 @@
 /*Navigation*/
-
 .nav-color-fade {
     width: 100%;
     height: 150px;
@@ -103,14 +102,97 @@
     display: none;
 }
 
-.hamburger-menu {
-    display: none;
+.nav-menu.is-visible {
+    display: block;
 }
 
 
-/* Hidden for now as light mode isn't implemented yet */
+/*Hamburger nav*/
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .fa-bars{
+    font-size: 2rem;
+}
+
+/*Toggle hamburger menu*/
+@media (max-width: 820px) {
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+    }
+
+    .hamburger-menu span {
+        font-size: 3rem;
+        color: var(--secondary-color);
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+    }
+    .hamburger-menu span:hover {
+        color: var(--on-secondary-highlight-color-color);
+        scale: 1.02;
+    }
+
+
+    #logo {
+        z-index: 3;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        background-color: var(--background-color);
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .nav-menu.is-visible {
+        max-height: 2000px;
+    }
+
+    .nav-menu ul {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-menu ul li {
+        font-size: 2.5rem;
+        border-bottom: 1px solid var(--surface--color);
+    }
+
+    #hire-me-button {
+        padding: 1rem;
+    }
+}
+
+
+
+/* Toggle button for light/darkmode */
 #theme-toggle {
-    visibility: hidden;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+#theme-toggle:hover {
+    color: var(--on-secondary-highlight-color-color);
+    scale: 1.02;
 }
 
 /*Footer*/
@@ -120,12 +202,9 @@ footer {
     margin-top: 35vh;
     margin-bottom: 0.5rem;
     /* background-color: #222628; */
-
-    margin-top: 80vh;
-    /*REMOVE WHEN CONTENT HAS BEEN ADDED TO THE SITE*/
 }
 
-footer img {
+#footer-logo {
     width: auto;
     height: 60px;
 }
@@ -154,7 +233,7 @@ footer img {
     align-items: center;
 }
 
-.img-button-container .btn {
+.img-button-container .my-btn {
     font-size: 1.5rem;
     padding: 0.7rem;
     margin-left: 1rem;
@@ -162,8 +241,67 @@ footer img {
 
 
 #copyright-text {
-    font-size: 0.7rem;
+    font-size: 1rem;
     margin-top: 0.5rem;
     color: var(--on-surface--color);
     align-self: center;
+}
+
+/*Responsitivity*/
+@media (max-width: 820px) {
+    .img-button-container .my-btn {
+        font-size: 1.3rem;
+        padding: 0.6rem;
+        margin-left: 1rem;
+    }
+
+    .img-links-container .social-link {
+        font-size: 3rem;
+    }
+
+    #theme-toggle {
+        display: block;
+        position: absolute;
+        font-size: 2rem;
+        left: 48%;
+        top:  1px;
+        transform: translateY(50%);
+    }
+}
+
+@media (max-width: 700px) {
+    footer {
+        margin-top: 10vh;
+    }
+}
+
+@media (max-width: 420px) {
+    .nav-menu ul li {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #hire-me-button {
+        font-size: 1.8rem;
+    }
+
+
+    .img-button-container .my-btn {
+        font-size: 1.1rem;
+        padding: 0.6rem;
+        margin-left: 0.5rem;
+    }
+
+/*Footer section*/
+    #footer-logo {
+        height: 45px;
+    }
+
+    .img-links-container .social-link {
+        font-size: 2.2rem;
+    }
+
+    #copyright-text {
+        font-size: 0.8rem;
+    }
 }

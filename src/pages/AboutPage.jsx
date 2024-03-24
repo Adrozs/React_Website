@@ -1,25 +1,49 @@
+import { Helmet } from 'react-helmet';
 import ImgCarousel from '../components/ImgCarousel'
 import './aboutPage.css'
 
 export const AboutPage = () => {
     return (
+        <>
+        <Helmet>
+             <title>Adrian Rozsahegyi | About </title>
+        </Helmet>
+
         <main>
-            <ImgCarousel />
             <section className='intro-text'>
                 <h1>About me</h1>
             </section>
+
+            <ImgCarousel />
 
             <section className='about-container content-width'>
                 {/* <img src="src\assets\adrian1.png" alt="Adrian" /> */}
                 <p> I am a 24 year old ambitious and driven person going from a successful career in retail management to Fullstack .NET development.
                     <br /> <br />
-                    Driven by a passion for continuous learning and professional growth. With a strong foundation in customer service, problem-solving, and team leadership, coupled with newly acquired skills in web development.
+                    Driven by a passion for learning and growth. I enjoy a challenge and love the feeling of solving a problem. 
+                    <br /><br />
+                    I have a strong foundation in customer service, problem-solving, and team leadership. Which makes the programmer role fit perfectly for me.
                     <br /> <br />
-                    Big fan of ice hockey and Formula 1, enjoys RPG video games and spontanious adventures with friends. Loves animals, especially my cat Zigge.
+                    I'm a huge fan of ice hockey, especially my local club. As well as watching Formula 1. Nerdy and a sucker for RPG video games, but also enjoys spontanious adventures with friends and family. 
+                    <br /><br />
+                    I love animals, especially my cat Zigge.
                 </p>
+                <div className='interests-container'>
+                    <div className='interest'>
+                        <img src="src\assets\images\About\Zigge.jpg" alt="Picture of Adrians cat Zigge. A black cat with yellow eyes sitting on a bed." />
+                        <p>Zigge</p>
+                    </div>
+                    <div className='interest'>
+                        <img src="src\assets\images\About\Hockey.jpg" alt="Picture of Adrians cat Zigge. A black cat with yellow eyes sitting on a bed." />
+                        <p>Favorite hockey team</p>
+                    </div>
+                    <div className='interest'>
+                        <img src="src\assets\images\About\Rpg.jpg" alt="Picture of Adrians cat Zigge. A black cat with yellow eyes sitting on a bed." />
+                        <p>RPG game Baldurs Gate 3</p>
+                    </div>
+                </div>
             </section>
-
-
         </main>
+        </>
     )
 }

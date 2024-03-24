@@ -8,7 +8,7 @@ export default function Expereience() {
         <>
         <section className='experience-container'>
                 <div className='experience-content'>
-                    <img src="src\assets\images\leadership_diploma_cropped.jpg" alt="Adrian holding diploma" className='shadow'/>
+                    <img src=".\src\assets\images\Work\leadership_diploma_cropped.jpg" alt="Adrian holding diploma" className='shadow'/>
                 <p>I have been working in the world of retail telecom since 2018. I began my journey at Elgiganten fresh out of High School as a sales person quickly taking on more responsibilities and becoming acting storemanager in Luleå.
                     <br /><br />
                     Moving back home to Stockholm in a new team continuing my focus on the stores goals and a positive work enviroment. There I also became acting stormananger and later storemanager which I've been for the past 3 years.

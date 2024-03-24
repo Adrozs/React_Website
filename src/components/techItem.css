@@ -60,3 +60,56 @@
     color: var(--on-secondary-container-color);
 }
 
+/*Responsitivity*/
+@media (max-width: 1257px) {
+    .techItem-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+.techItem-container {
+        width: 90%;
+        justify-content:center;
+    }
+
+    .item-container {
+        padding: 1rem 0rem 0 0rem;
+    }
+
+    .icon-container i {
+        font-size: 3.5rem;
+    }
+
+    .icon-container i.fa-gear,
+    .icon-container i.fa-file-code {
+        width: 81.6px;
+        height: 81.6px;
+    }
+
+    .title-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .text-container p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .icon-container i.fa-gear,
+    .icon-container i.fa-file-code {
+        width: 65px;
+        height: 65px;
+    }
+
+    .item-container {
+        padding: 1rem 0.8rem 0 0.8rem;
+    }
+}
+
+@media (max-width: 301px) {
+    .item-container {
+        padding: 1rem 0.5rem 0 0.5rem;
+    }
+}

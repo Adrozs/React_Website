@@ -4,6 +4,13 @@
   --alt-background-color: #262a2c;
   --on-background-color: #e1e3e4;
 
+  /*Special colors*/
+  --background-resume-color: #fbfcfe;
+  --on-background-resume-color: #373c3e;
+  --primary-resume-color: #5ad5f9;
+  --secondary-resume-color: #4c626a;
+  --teritary-resume-color: #595c7e;
+
   --surface--color: #40484b;
   --on-surface--color: #bfc8cc;
 
@@ -35,7 +42,7 @@
   /*Colors*/
   --background-color: #fbfcfe;
   --alt-background-color: #eff1f5;
-  --on-background-color: #191c1d;
+  --on-background-color: #373c3e;
 
   --surface--color: #dbe4e8;
   --on-surface--color: #40484b;
@@ -82,6 +89,16 @@ body {
   color: var(--on-background-color);
 }
 
+/*Added to body when hamburger menu is open to stop ability to scroll*/
+.body-no-scroll {
+  overflow: hidden !important;
+}
+
+/*Added to main when hamburger menu is open to make sure no content is clipping or interfering with the menu*/
+.content-hide {
+  display: none;
+}
+
 
 /*Sets width for sections with content in - to allow for backgrounds not constrained to the content width*/
 .content-width {
@@ -98,7 +115,7 @@ body {
   transition-timing-function: ease;
   font-size: 1.5rem;
   padding: 0.8rem;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   border-radius: 3vmin;
   border: none;
   background-color: var(--primary-color);
@@ -158,7 +175,6 @@ body {
 
 .alt-background {
   background-color: var(--alt-background-color);
-  /* padding: 1rem 0; */
 }
 
 .hoverable {

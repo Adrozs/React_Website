@@ -85,3 +85,62 @@
 .card-text h6 {
     font-family: "Roboto Thin", sans-serif;
 }
+
+
+@media (max-width: 1190px) {
+    .cards-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 945px) {
+   .cards {
+        font-size: 1.2rem;
+   }
+
+    .card-title h3 {
+        font-size: 2rem;
+    }
+
+    .cards .card {
+        min-width: 400px;
+    }
+}
+
+@media (max-width: 830px) {
+   .cards {
+        font-size: 1.5rem;
+   }
+
+   .card-title h3 {
+    font-size: 2.5rem;
+   }
+
+    .cards .card {
+        min-width: 90%;
+    }
+
+    button {
+        height: 3rem;
+    }
+}
+
+@media (max-width: 550px) {
+    button {
+            height: 3.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .cards {
+        font-size: 1.25rem;
+    }
+
+    .cards .card {
+        height: 30vh;
+    }
+
+    .card-title h3 {
+        font-size: 2rem;
+    }
+}

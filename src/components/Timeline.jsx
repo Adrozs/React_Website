@@ -1,4 +1,4 @@
-import MyTimeline from '../assets/timeline.json';
+import MyTimeline from '../assets/Json/timeline.json';
 import './timeline.css';
 
 export default function Timeline() {
@@ -12,7 +12,7 @@ export default function Timeline() {
                         {MyTimeline.experience.map((exp,i) => {
                         return (
                         <section key={i} className="timeline">
-                            <article className="timeline-content light-mode">
+                            <article className="timeline-content">
                                 <h2 className="timeline-year">{exp.year}</h2>
                                 <span className="timeline-icon"><i className={exp.icon}></i></span>
                                 <h3 className="title">{exp.position}</h3>
