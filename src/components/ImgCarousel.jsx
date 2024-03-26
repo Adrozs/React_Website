@@ -1,6 +1,6 @@
-import School from "./src/assets/images/About/School.jpg";
-import Concert from "./src/assets/images/About/Concert.jpg";
-import Padling from "./src/assets/images/About/Padling.jpg";
+import School from "../assets/images/About/School.jpg";
+import Concert from "../assets/images/About/Concert.jpg";
+import Padling from "../assets/images/About/Padling.jpg";
 
 
 import Carousel from 'react-bootstrap/Carousel';
