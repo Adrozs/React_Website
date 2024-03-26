@@ -1,3 +1,8 @@
+import School from "./src/assets/images/About/School.jpg";
+import Concert from "./src/assets/images/About/Concert.jpg";
+import Padling from "./src/assets/images/About/Padling.jpg";
+
+
 import Carousel from 'react-bootstrap/Carousel';
 import './imgCarousel.css';
 
@@ -7,13 +12,13 @@ export default function ImgCarousel() {
         <>
         <Carousel controls={false} interval={6000} pause="hover">
             <Carousel.Item>
-                <img src='.\src\assets\images\About\school.jpg' />
+                <img src={School}/>
             </Carousel.Item>
             <Carousel.Item>
-                    <img src='.\src\assets\images\About\Concert.jpg'/>
+                    <img src={Concert} />
             </Carousel.Item>
             <Carousel.Item>
-                    <img src='.\src\assets\images\About\padling.jpg'/>
+                    <img src={Padling} />
                 <Carousel.Caption>
                 </Carousel.Caption>
             </Carousel.Item>
