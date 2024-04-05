@@ -1,7 +1,7 @@
-import DreamifyImg from ".\src\assets\images\highligtedWork\Dreamify.jpg";
-import TheBankImg from ".\src\assets\images\highligtedWork\The_Bank.jpg";
-import CWarriorImg from ".\src\assets\images\highligtedWork\ConsoleWarrior_Stylized.webp";
-import CBlackjackImg from ".\src\assets\images\highligtedWork\ConsoleBlackJack.jpg";
+import DreamifyImg from "../assets/images/highligtedWork/Dreamify.jpg";
+import TheBankImg from "../assets/images/highligtedWork/The_Bank.jpg";
+import CWarriorImg from "../assets/images/highligtedWork/ConsoleWarrior_Stylized.webp";
+import CBlackjackImg from "../assets/images/highligtedWork/ConsoleBlackJack.jpg";
 
 import "./highlightedWork.css";
 

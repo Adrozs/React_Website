@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import AdrianDiploma from ".\src\assets\images\Work\leadership_diploma_cropped.jpg";
+import AdrianDiploma from "../assets/images/Work/leadership_diploma_cropped.jpg";
 import './experience.css';
 
 export default function Expereience() {

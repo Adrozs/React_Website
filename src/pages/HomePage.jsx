@@ -4,7 +4,7 @@ import HighlightedWork from '../components/HighlightedWork.jsx';
 import TechItem from '../components/TechItem.jsx';
 import Expereience from '../components/experience.jsx';
 import './homePage.css'
-import AdrianHeadshot from "src\assets\images\Adrian\adrian1.png"
+import AdrianHeadshot from "../assets/images/Adrian/adrian1.png";
 
 export const HomePage = () => {
     return (

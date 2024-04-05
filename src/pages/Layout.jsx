@@ -1,7 +1,7 @@
 import {Outlet, NavLink, Link} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './layout.css'
-import Logo from ".\src\assets\images\Other\Personal_Logo.png"
+import Logo from "../assets/images/Other/Personal_Logo.png"
 
 export const Layout = () => {
     /*Hides hamburger menu by default */

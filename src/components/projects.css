@@ -11,7 +11,7 @@
 }
 
 .cards-container {
-    width: 80%;
+    /* width: 100%; */
     margin: auto;
 }
 
@@ -24,8 +24,8 @@
 
 .cards .card {
     width: 25%;
-    min-width: 300px;
-    height: 45vh;
+    min-width: 350px;
+    height: 65vh;
     padding: 1rem;
     margin: 0.5rem;
     background-color: var(--secondary-container-color);
@@ -53,7 +53,8 @@
 
 .card .btn {
     align-self: center;
-    width: 60%;
+    width: 80%;
+    height: 12%;
     background-color: var(--primary-color);
     color: var(--on-primary-color);
     border: none;
@@ -133,11 +134,11 @@
 
 @media (max-width: 400px) {
     .cards {
-        font-size: 1.25rem;
+        font-size: 1.20rem;
     }
 
     .cards .card {
-        height: 30vh;
+        height: 60vh;
     }
 
     .card-title h3 {

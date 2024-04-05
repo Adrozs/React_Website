@@ -1,9 +1,9 @@
 import { Helmet } from 'react-helmet';
 import ImgCarousel from '../components/ImgCarousel'
 import './aboutPage.css'
-import ZiggeImg from "src\assets\images\About\Zigge.jpg";
-import HockeyImg from "src\assets\images\About\Hockey.jpg";
-import GameImg from "src\assets\images\About\Rpg.jpg";
+import ZiggeImg from "../assets/images/About/Zigge.jpg";
+import HockeyImg from "../assets/images/About/Hockey.jpg";
+import GameImg from "../assets/images/About/Rpg.jpg";
 
 
 export const AboutPage = () => {
