@@ -1,3 +1,8 @@
+import DreamifyImg from ".\src\assets\images\highligtedWork\Dreamify.jpg";
+import TheBankImg from ".\src\assets\images\highligtedWork\The_Bank.jpg";
+import CWarriorImg from ".\src\assets\images\highligtedWork\ConsoleWarrior_Stylized.webp";
+import CBlackjackImg from ".\src\assets\images\highligtedWork\ConsoleBlackJack.jpg";
+
 import "./highlightedWork.css";
 
 
@@ -10,7 +15,7 @@ export default function() {
                     {/*Dreamify*/}
                     <div className="card-object">
                         <div className="card-content">
-                            <img src=".\src\assets\images\highligtedWork\Dreamify.jpg" alt="Dreamify" />
+                            <img src={DreamifyImg} alt="Dreamify" />
                             <div>
                                 <h3>Dreamify</h3>
                                 <p>
@@ -29,7 +34,7 @@ export default function() {
                     {/*The Bank*/}
                     <div className="card-object">
                         <div className="card-content">
-                            <img src=".\src\assets\images\highligtedWork\The_Bank.jpg" alt="The Bank" />
+                            <img src={TheBankImg} alt="The Bank" />
                             <div>
                                 <h3>"The Bank"</h3>
                                 <p>
@@ -49,7 +54,7 @@ export default function() {
                     <div className="card-object">
                         <div className="card-content">
                             <img
-                                src=".\src\assets\images\highligtedWork\ConsoleWarrior_Stylized.webp"
+                                src={CWarriorImg}
                                 alt="Console Warrior"
                             />
                             <div>
@@ -71,7 +76,7 @@ export default function() {
                     <div className="card-object">
                         <div className="card-content">
                             <img
-                                src=".\src\assets\images\highligtedWork\ConsoleBlackJack.jpg"
+                                src={CBlackjackImg}
                                 alt="Console Blackjack"
                             />
                             <div>

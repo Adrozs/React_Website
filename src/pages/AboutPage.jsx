@@ -1,6 +1,10 @@
 import { Helmet } from 'react-helmet';
 import ImgCarousel from '../components/ImgCarousel'
 import './aboutPage.css'
+import ZiggeImg from "src\assets\images\About\Zigge.jpg";
+import HockeyImg from "src\assets\images\About\Hockey.jpg";
+import GameImg from "src\assets\images\About\Rpg.jpg";
+
 
 export const AboutPage = () => {
     return (
@@ -30,15 +34,15 @@ export const AboutPage = () => {
                 </p>
                 <div className='interests-container'>
                     <div className='interest'>
-                        <img src="src\assets\images\About\Zigge.jpg" alt="Picture of Adrians cat Zigge. A black cat with yellow eyes sitting on a bed." />
+                        <img src={ZiggeImg} alt="Picture of Adrians cat Zigge. A black cat with yellow eyes sitting on a bed." />
                         <p>Zigge</p>
                     </div>
                     <div className='interest'>
-                        <img src="src\assets\images\About\Hockey.jpg" alt="Picture of Adrians cat Zigge. A black cat with yellow eyes sitting on a bed." />
+                        <img src={HockeyImg} alt="Picture of hockey players" />
                         <p>Favorite hockey team</p>
                     </div>
                     <div className='interest'>
-                        <img src="src\assets\images\About\Rpg.jpg" alt="Picture of Adrians cat Zigge. A black cat with yellow eyes sitting on a bed." />
+                        <img src={GameImg} alt="Picture of heros looking out over a cliff in the game Baldurs Gate 3." />
                         <p>RPG game Baldurs Gate 3</p>
                     </div>
                 </div>

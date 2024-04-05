@@ -1,6 +1,7 @@
 import {Outlet, NavLink, Link} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import './layout.css'
+import Logo from ".\src\assets\images\Other\Personal_Logo.png"
 
 export const Layout = () => {
     /*Hides hamburger menu by default */
@@ -73,7 +74,7 @@ export const Layout = () => {
             {/* Navigation */}
             <div className="nav-color-fade"></div>
             <header className='navbar content-width'>
-                    <Link to="/" id="logo"><img src=".\src\assets\images\Other\Personal_Logo.png" alt="Adrian's Logo. A rose combined with a mountain." /></Link>
+                    <Link to="/" id="logo"><img src={Logo} alt="Adrian's Logo. A rose combined with a mountain." /></Link>
                 {/* Hamburger menu */}
                 <input type="checkbox" id="nav-toggle" className="nav-toggle" />
                 <label htmlFor="nav-toggle" className="hamburger-menu" onClick={toggleNav}>
@@ -97,7 +98,7 @@ export const Layout = () => {
             <footer className='content-width'>
                 <section className="img-links-container">
                     <div className="img-button-container">
-                            <img id="footer-logo" src=".\src\assets\images\Other\Personal_Logo.png" alt="Adrian's Logo. A rose combined with a mountain."/>
+                            <img id="footer-logo" src={Logo} alt="Adrian's Logo. A rose combined with a mountain."/>
                         <Link to="/contact" className="my-btn">Contact me</Link>
                     </div>
                     {/* Social links */}

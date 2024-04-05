@@ -4,6 +4,7 @@ import HighlightedWork from '../components/HighlightedWork.jsx';
 import TechItem from '../components/TechItem.jsx';
 import Expereience from '../components/experience.jsx';
 import './homePage.css'
+import AdrianHeadshot from "src\assets\images\Adrian\adrian1.png"
 
 export const HomePage = () => {
     return (
@@ -15,7 +16,7 @@ export const HomePage = () => {
         <main>                
             <section className='hero content-width'>
                 <h1>Adrian Rozsahegyi <br/> <span>.NET Developer</span> </h1>
-                    <img src="src\assets\images\Adrian\adrian1.png" className='introduction-img' alt="Adrian" />
+                    <img src={AdrianHeadshot} className='introduction-img' alt="Adrian" />
                 <ul className='link-container'>
                     <a href="https://github.com/Adrozs" target="_blank" className="social-link hoverable "><i
                         className="fa-brands fa-linkedin"></i></a>
