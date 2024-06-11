@@ -9,7 +9,7 @@ import { ContactPage } from './pages/ContactPage';
 function App() {
   return (
     <>
-      <BrowserRouter basename="/React_Website">
+      <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
